@@ -1,0 +1,14 @@
+.characterPage {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 7rem 2rem 7rem;
+
+  h1 {
+    margin-top: 0;
+  }
+
+  img {
+    height: 20rem;
+    object-fit: contain;
+  }
+}

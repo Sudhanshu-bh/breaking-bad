@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+
+ul.pagination {
+  border-radius: 100px;
+  background-color: darkcyan;
+  list-style: none;
+  display: flex;
+  width: fit-content;
+  padding: 0.9rem;
+  margin: 3rem auto;
+  font-family: 'Georama', sans-serif;
+
+  li {
+    margin: 0.4rem;
+
+    a {
+      cursor: pointer;
+      padding: 0.4rem 0.7rem;
+      background-color: white;
+      border-radius: 100px;
+    }
+
+    .prev, .next {
+      padding: 0.7rem 1.05rem;
+      font-family: 'Georama', sans-serif;
+    }
+
+    &.active a {
+      background-color: rgb(207, 207, 207);
+    }
+
+    &.disabled {
+      color: gray;
+    }
+  }
+}
