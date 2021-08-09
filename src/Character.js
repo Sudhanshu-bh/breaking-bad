@@ -11,7 +11,6 @@ function Character() {
   useEffect(() => {
     axios.get(`/characters/${id}`)
       .then(res => {
-        console.log("data: ", res.data[0])
         setchar(res.data[0])
 
         axios.get(`/quote?author=${res.data[0].name}`)
@@ -23,7 +22,7 @@ function Character() {
           })
       })
       .catch(err => console.log(err))
-  }, [])
+  }, [id])
 
   const DisplayQuotes = () => {
     if (quotes?.length !== 0) {

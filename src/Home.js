@@ -15,7 +15,6 @@ function Home() {
   useEffect(() => {
     axios.get('/characters')
       .then(res => {
-        console.log(res.data)
         setcharacters(res.data)
       })
       .catch(err => console.log(err))
